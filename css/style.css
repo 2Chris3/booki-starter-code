@@ -122,8 +122,7 @@ body {
 
 /* 👇 Header */
 
-h1
-{
+h1 {
     font-size: 22px;
 }
 
@@ -135,7 +134,8 @@ h1
 
 }
 
-figure {
+/*logo*/
+.logo figure {
     margin: 30px 0;
 }
 
@@ -144,6 +144,7 @@ figure {
     height: 19px;
 }
 
+/*barre de navigation*/
 .navbar {
     display: flex;
     flex-flow: row wrap;
@@ -166,6 +167,7 @@ li {
 
 }
 
+/*barre de recherche*/
 .searchbar {
     display: flex;
     flex-flow: row wrap;
@@ -187,27 +189,24 @@ li {
     border-radius: 15px 0 0 15px;
 }
 
-.fa-location-dot
-{
+.fa-location-dot {
     color: black;
 }
 
-.searchbar input
-{
+.searchbar input {
     width: 195px;
     height: 100%;
     border: solid 1px var(--main-bg-color);
 }
-.searchbar input::placeholder 
-{
+
+.searchbar input::placeholder {
     text-align: center;
     color: black;
     font-size: 18px;
     font-weight: 700;
 }
 
-.searchbar button
-{
+.searchbar button {
     width: 132px;
     height: 100%;
     border-radius: 0 15px 15px 0;
@@ -219,6 +218,54 @@ li {
 
 
 
+
+
+
+
+
+
+/* 👇 Main */
+
+/*Filtres*/
+.filtres {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    height: 50px;
+    margin-top: 35px;
+}
+
+.filtres-content {
+    display: flex;
+    gap: 24px;
+    height: 100%;
+}
+
+.filtres button {
+    display: flex;
+    flex-flow: row wrap;
+    border: solid 2px #D9D9D9;
+    border-radius: 25px;
+    padding: 15px 19px;
+    background-color: white;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.filtres button:hover {
+    background-color: var(--filter-bg-color);
+}
+
+
+/*info*/
+.info {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 37.5px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
