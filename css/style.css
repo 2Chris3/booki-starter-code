@@ -201,6 +201,7 @@ li {
 
 .searchbar input::placeholder {
     text-align: center;
+    justify-content: center;
     color: black;
     font-size: 18px;
     font-weight: 700;
@@ -214,6 +215,7 @@ li {
     background-color: var(--main-color);
     color: var(--main-bg-color);
     font-weight: 700;
+    font-size: 18px;
 }
 
 
@@ -229,7 +231,7 @@ li {
 /*Filtres*/
 .filtres {
     display: flex;
-    gap: 24px;
+    gap: 15px;
     align-items: center;
     height: 50px;
     margin-top: 35px;
@@ -237,7 +239,7 @@ li {
 
 .filtres-content {
     display: flex;
-    gap: 24px;
+    gap: 15px;
     height: 100%;
 }
 
@@ -264,8 +266,43 @@ li {
     flex-flow: row wrap;
     align-items: center;
     gap: 10px;
-    margin-top: 37.5px;
+    margin: 37.5px 0;
 }
+
+
+/*Section hébergements*/
+.hebergements {
+    height: 614px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.hebergements-cards .card {
+    width: 27%;
+    padding: 5px 5px 0 5px;
+    
+}
+
+.hebergements img {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergements .card-content {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
