@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -62,7 +63,7 @@ body {
     /*ajouts pour disposer les sections*/
     flex-flow: row wrap;
     width: 100%;
-    gap: 40px;
+    gap: 25px;
 }
 
 .hebergements-and-populaires section {
@@ -79,7 +80,7 @@ body {
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 31%;
 }
 
 .populaires-title {
@@ -308,7 +309,7 @@ i.fa-info {
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
-    gap: 30px;
+    gap: 26px;
 
 }
 
@@ -340,35 +341,32 @@ i.fa-info {
     justify-content: space-between;
     gap: 8px;
     margin-top: 4px;
-
 }
 
 
 
 /* Section activités*/
 
-.activites {
+main .activites {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     width: 100%;
-    gap: 30px;
+    gap: 0;
     margin-bottom: 35px;
-}
-
-.activites-title {
-    margin: 0;
+    margin-top: 40px;
 }
 
 .activites-cards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: stretch;
+    justify-content: space-between;
     gap: 30px;
+    padding-left: 10px;
 }
 
 .activites .card {
-    width: 23%;
+    width: 22%;
     display: flex;
     flex-flow: column wrap;
     padding: 0;
@@ -410,7 +408,7 @@ footer {
     gap: 0;
 }
 
-.footer-titles{
+.footer-titles {
     margin: 0;
 }
 
