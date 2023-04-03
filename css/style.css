@@ -347,13 +347,12 @@ i.fa-info {
 
 /* Section activités*/
 
-main .activites {
+.activites {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     width: 100%;
     gap: 30px;
-    background-color: white;
     margin-bottom: 35px;
 }
 
