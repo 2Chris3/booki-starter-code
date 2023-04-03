@@ -223,9 +223,6 @@ li {
 
 
 
-
-
-
 /* 👇 Main */
 
 /*Filtres*/
@@ -234,14 +231,13 @@ li {
     flex-flow: row wrap;
     gap: 15px;
     align-items: center;
-    height: 50px;
     margin: 0;
 }
 
 .filtres-content {
     display: flex;
+    flex-flow: row wrap;
     gap: 15px;
-    height: 100%;
 }
 
 .filtres button {
