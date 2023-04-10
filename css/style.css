@@ -586,7 +586,37 @@ footer {
         padding: 0 20px;
     }
 
+    .main-container .populaires,
+    .main-container .populaires .populaires-cards,
+    .main-container .populaires .populaires-cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+        
+    }
 
+    .main-container .populaires .populaires-cards .card img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    /*activites*/
+
+    .main-container .activites,
+    .main-container .activites .activites-cards,
+    .main-container .activites .activites-cards .card-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .activites-cards img {
+        height: 141px;
+    }
 
     /*--------------------------------------*/
 
