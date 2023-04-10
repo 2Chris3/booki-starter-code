@@ -298,6 +298,7 @@ i.fa-info {
 }
 
 /*Section hébergements*/
+
 .hebergements {
     display: flex;
     flex-flow: row wrap;
@@ -326,7 +327,10 @@ i.fa-info {
     justify-content: space-between;
     align-content: space-between;
     gap: 26px;
+}
 
+.hebergements .card-links {
+    flex: 1 1 30%;
 }
 
 .hebergements-cards .card {
@@ -381,8 +385,8 @@ main .activites {
     margin-bottom: 25px;
 }
 
-.activites a {
-    width: 20%;
+.activites .card-links {
+    flex: 1 1 20%;
 }
 
 .activites .card {
@@ -582,8 +586,9 @@ footer {
         right: 20px;
     }
 
-    .searchbar-button-text {
+    .searchbar .searchbar-button-text {
         display: none;
+        margin: 0;
     }
 
     .fa-search {
