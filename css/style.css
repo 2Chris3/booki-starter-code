@@ -586,6 +586,7 @@ footer {
         padding: 0 20px;
     }
 
+    /*populaires*/
     .main-container .populaires,
     .main-container .populaires .populaires-cards,
     .main-container .populaires .populaires-cards .card {
@@ -594,7 +595,19 @@ footer {
         justify-content: space-between;
         gap: 20px;
         width: 100%;
-        
+    }
+
+    /*hebergements*/
+
+    .main-container .hebergements,
+    .main-container .hebergements .hebergements-cards,
+    .main-container .hebergements .hebergements-cards .card-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+
     }
 
     .main-container .populaires .populaires-cards .card img {
