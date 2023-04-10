@@ -635,8 +635,20 @@ footer {
 
     /* 👇 FOOTER */
 
+    .footer-containers{
+        display: flex;
+        justify-content: column;
+        padding: 30px;
+    }
 
-
+    .footer-ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
 
 
 
