@@ -363,18 +363,14 @@ i.fa-info {
 
 /* Section activités*/
 
-main .activites {
+.activites {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    gap: 0px;
     margin: 40px 0;
 }
 
 .activites-title {
-    display: block;
     margin: 30px 0;
-    padding: 0;
 }
 
 .activites .activites-cards {
@@ -512,36 +508,35 @@ footer {
 
     /* barre de navigation*/
 
-    nav {
-        flex: 1 1 auto;
+    .banniere .navbar .navbar-ul {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: stretch;
-    }
-
-    .navbar {
-        flex: 1 1 auto;
         flex-flow: row wrap;
         justify-content: start;
+        gap: 0;
+        width: 100%;
+        margin: 0 0 30px 0;
     }
 
-    .navbar,
-    .navbar-ul,
-    .navbar-li {
+    .navbar .navbar-ul .navbar-li {
         display: flex;
-        width: 100%;
-        margin: 0;
+        flex-flow: row wrap;
+        justify-content: center;
+        flex: 1 1 1px;
+        border-bottom: solid 2px var(--main-bg-color);
+        padding: 0 0 15px 0;
+    }
+
+    .navbar .navbar-ul .navbar-li:hover {
+        border-bottom: solid 2px var(--main-color);
+    }
+
+    /* effets en interaction*/
+
+    .navbar .navbar-ul .nav-links:hover {
+        border-top: none;
         padding: 0;
     }
 
-    .navbar .nav-links {
-        display: flex;
-        flex: 1 1 auto;
-        justify-content: center;
-        padding: 0 0 15px 0;
-        border-top: none;
-        border-bottom: solid 2px var(--main-bg-color);
-    }
 
     /*--------------------------------------*/
 
@@ -554,8 +549,9 @@ footer {
         padding: 0 20px;
     }
 
-    .searchbar {
+    .main-container .searchbar {
         display: flex;
+        margin-bottom: 15px;
     }
 
     .searchbar-icon-container {
@@ -609,7 +605,10 @@ footer {
 
     .main-container .filtres {
         padding: 20px;
+    }
 
+    .main-container .filtres-title {
+        margin: 0;
     }
 
     .filtres .filtres-buttons {
@@ -627,7 +626,7 @@ footer {
         display: flex;
         flex-flow: row nowrap;
         padding: 20px;
-        margin: 0;
+        margin: 0 0 15px 0;
     }
 
     .main-container .info .info-text {
@@ -648,6 +647,17 @@ footer {
 
     /*populaires*/
 
+    .main-container .hebergements-and-populaires .populaires {
+        padding: 30px 20px;
+        border-radius: 0;
+        gap: 15px;
+        margin: 0;
+    }
+
+    .main-container .populaires .populaires-title {
+        margin-bottom: 15px;
+    }
+
     .main-container .populaires .populaires-cards,
     .main-container .populaires .populaires-cards .card {
         display: flex;
@@ -655,21 +665,60 @@ footer {
         justify-content: space-between;
         gap: 15px;
         width: 100%;
-        padding: 0;
         margin: 0;
     }
-
-
+¢
     .main-container .hebergements-and-populaires .populaires {
         border-radius: 0;
-        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 15px;
-        width: 100;
         margin-top: 0;
     }
+
+    .main-container .populaires .card {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        padding: 5px;
+    }
+
+    .main-container .populaires .card-content {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        flex: 1 1 0;
+        padding: 10px 0 5px 0;
+    }
+
+    .main-container .populaires .card-txt {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: start;
+        gap: 5px;
+    }
+
+    .main-container .populaires .card-title {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .main-container .populaires .card-subtitle {
+        font-size: 14px;
+    }
+
+    .main-container .populaires .card-rating {
+        display: flex;
+        object-position: 50% bottom;
+    }
+
+    .card-rating .fa-star {
+        display: flex;
+    }
+
 
     /*hebergements*/
 
@@ -685,15 +734,9 @@ footer {
         background-color: transparent;
     }
 
-    .main-container .hebergements-and-populaires .populaires,
     .main-container .hebergements-and-populaires .hebergements,
     .main-container .activites {
-        padding: 30px 20px;
-    }
-
-    .main-container .populaires .populaires-cards .card img {
-        width: 100%;
-        border-radius: 20px 20px 0 0;
+        padding: 35px 20px;
     }
 
     /*activites*/
@@ -730,7 +773,6 @@ footer {
     .footer-ul {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         gap: 15px;
         padding: 0;
         margin: 0;
