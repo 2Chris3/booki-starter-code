@@ -470,13 +470,12 @@ footer {
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         justify-content: space-between;
     }
 
     .populaires-cards .card {
-        width: 25%;
+        flex: 1 1 1px;
     }
 
     .populaires-cards .card-title {
@@ -487,8 +486,11 @@ footer {
         font-size: 13px;
     }
 
+    /* activites */
 
-    /* Activites*/
+    .activites .card img {
+        height: 141px;
+    }
 
 
 }
