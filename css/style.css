@@ -446,13 +446,22 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
+/* filtres */
+
+
+    /* hebergements */
+
     .hebergements {
         width: 100%;
     }
+
+
+    /* populaires */
 
     .populaires {
         width: 100%;
@@ -477,6 +486,11 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+
+    /* Activites*/
+
+
 }
 
 /* Small devices (phones, less than 768px) */
@@ -667,8 +681,8 @@ footer {
         width: 100%;
         margin: 0;
     }
-¢
-    .main-container .hebergements-and-populaires .populaires {
+
+    ¢ .main-container .hebergements-and-populaires .populaires {
         border-radius: 0;
         display: flex;
         flex-direction: column;
