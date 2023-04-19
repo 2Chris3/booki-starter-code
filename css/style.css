@@ -2,6 +2,8 @@
 * {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    /* astuces pour reperer les elements qui depassent du cadre */
+
 }
 
 :root {
@@ -181,13 +183,14 @@ li {
 .searchbar {
     height: 49px;
     display: flex;
+    flex-wrap: wrap;
     gap: 0;
     margin: 35px 0;
 }
 
 .searchbar-icon-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     place-content: center;
     border-radius: 15px 0 0 15px;
     background-color: var(--main-bg-color);
@@ -198,8 +201,9 @@ li {
     padding: 14px 18px;
 }
 
-.searchbar input {
-    width: 196px;
+.searchbar-input {
+    display: flex;
+    flex-wrap: wrap;
     border: solid 1px var(--main-bg-color);
 }
 
@@ -288,8 +292,8 @@ i.fa-info {
 }
 
 .info-circle {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     display: flex;
     flex-flow: row wrap;
     place-content: center;
@@ -347,8 +351,7 @@ i.fa-info {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    gap: 8px;
-    margin: 4px 10px 10px 10px;
+    margin: 0 10px;
 }
 
 .card-text {
@@ -360,7 +363,6 @@ i.fa-info {
 }
 
 
-
 /* Section activités*/
 
 .activites {
@@ -370,15 +372,14 @@ i.fa-info {
 }
 
 .activites-title {
-    margin: 30px 0;
+    padding: 30px;
 }
 
 .activites .activites-cards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
-    margin-bottom: 25px;
 }
 
 .activites .card-links {
@@ -447,49 +448,65 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
-    .hebergements-and-populaires {
-        flex-direction: column;
+    .main-container .hebergements-and-populaires {
+        display: flex;
+        flex-flow: column wrap;
     }
 
-/* filtres */
+    /* filtres */
+
+    .main-container .filtres {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: start;
+        align-items: start;
+    }
 
 
     /* hebergements */
 
-    .hebergements {
+    .main-container .hebergements-and-populaires .hebergements {
         width: 100%;
     }
 
+    .main-container .hebergements .hebergements-cards {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .hebergements-and-populaires .hebergements .hebergements-cards .card {
+        flex: 1 1 30%;
+    }
 
     /* populaires */
 
-    .populaires {
+    .hebergements-and-populaires .populaires {
         width: 100%;
         margin-top: 50px;
     }
 
-    .populaires-cards {
+    .populaires .populaires-cards {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
+    .hebergements-and-populaires .populaires-cards .card {
         flex: 1 1 1px;
     }
 
-    .populaires-cards .card-title {
+    .populaires .populaires-cards .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .populaires .populaires-cards .card-subtitle {
         font-size: 13px;
     }
 
     /* activites */
 
-    .activites .card img {
-        height: 141px;
+    body main .main-container .activites .card img {
+        height: 200px;
     }
 
 
@@ -664,6 +681,8 @@ footer {
     /*populaires*/
 
     .main-container .hebergements-and-populaires .populaires {
+        display: flex;
+        flex-flow: column wrap;
         padding: 30px 20px;
         border-radius: 0;
         gap: 15px;
@@ -674,10 +693,25 @@ footer {
         margin-bottom: 15px;
     }
 
-    .main-container .populaires .populaires-cards,
+    .main-container .populaires .card-links {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
+    .main-container .populaires .populaires-cards {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        gap: 15px;
+        width: 100%;
+        margin: 0;
+    }
+
+
     .main-container .populaires .populaires-cards .card {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         justify-content: space-between;
         gap: 15px;
         width: 100%;
@@ -768,7 +802,7 @@ footer {
         margin: 0;
     }
 
-    .activites-cards img {
+    .main-container .activites-cards img {
         height: 141px;
     }
 
