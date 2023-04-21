@@ -21,6 +21,7 @@ body {
     justify-content: center;
     /*ajout de marge pour enlerver les marges générées automatiquement*/
     margin: 0;
+    background-color: white;
 }
 
 .main-container {
@@ -198,13 +199,15 @@ li {
 
 .fa-location-dot {
     color: black;
-    padding: 14px 18px;
+    padding: 0 25px;
+    
 }
 
 .searchbar-input {
     display: flex;
     flex-wrap: wrap;
     border: solid 1px var(--main-bg-color);
+    width: 195px;
 }
 
 .searchbar input::placeholder {
@@ -325,6 +328,10 @@ i.fa-info {
     margin: 0;
 }
 
+.hebergements .card-title {
+    font-size: 14px;
+}
+
 .hebergements-cards {
     display: flex;
     flex-flow: row wrap;
@@ -362,6 +369,10 @@ i.fa-info {
     margin-top: 4px;
 }
 
+.hebergements .card-content, .hebergements .card-text {
+    padding-bottom: 8px;
+}
+
 
 /* Section activités*/
 
@@ -372,7 +383,7 @@ i.fa-info {
 }
 
 .activites-title {
-    padding: 30px;
+    padding: 10px 0 0 30px;
 }
 
 .activites .activites-cards {
@@ -380,10 +391,12 @@ i.fa-info {
     flex-flow: row wrap;
     justify-content: space-between;
     gap: 30px;
+    padding: 30px;
 }
 
+
 .activites .card-links {
-    flex: 1 1 20%;
+    flex: 1 1 1px;
 }
 
 .activites .card {
@@ -563,9 +576,20 @@ footer {
         border-bottom: solid 2px var(--main-color);
     }
 
+    .navbar .navbar-ul .navbar-li:focus,
+    .navbar .navbar-ul .navbar-li:active{
+        border-bottom: solid 2px var(--main-color);
+    }
+
     /* effets en interaction*/
 
     .navbar .navbar-ul .nav-links:hover {
+        border-top: none;
+        padding: 0;
+    }
+
+    .navbar .navbar-ul .nav-links:active,
+    .navbar .navbar-ul .nav-links:focus {
         border-top: none;
         padding: 0;
     }
@@ -575,12 +599,12 @@ footer {
 
     /* 👇 MAIN */
 
-    /* barre de recherche */
-
     .main-container h1,
     .main-container h1+p {
         padding: 0 20px;
     }
+
+    /* barre de recherche */
 
     .main-container .searchbar {
         display: flex;
@@ -599,12 +623,10 @@ footer {
 
     .searchbar input {
         flex: 1 1 auto;
-        border-top: solid 2px var(--main-bg-color);
-        border-bottom: solid 2px var(--main-bg-color);
-        border-left: none;
-        border-right: none;
+        border: solid 2px var(--main-bg-color);
         z-index: -1;
-
+        position: relative;
+        left: 20px;
     }
 
     .searchbar button {
@@ -638,18 +660,30 @@ footer {
 
     .main-container .filtres {
         padding: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     .main-container .filtres-title {
         margin: 0;
     }
 
+    .main-container .filtres-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
     .filtres .filtres-buttons {
         display: flex;
         flex-flow: row wrap;
-        height: 100%;
         font-size: 14px;
-        flex: 1 1 1px;
+        flex-basis: 45%;
+    }
+
+    .filtres button:active {
+        background-color: var(--filter-bg-color);
     }
 
 
@@ -669,7 +703,7 @@ footer {
 
     /*herbergements et populaires*/
 
-    .hebergements-and-populaires {
+    .main-container .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -727,9 +761,9 @@ footer {
         margin-top: 0;
     }
 
-    .main-container .populaires .card {
+    .main-container .populaires .populaires-cards .card {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: start;
         padding: 5px;
     }
@@ -789,11 +823,14 @@ footer {
         padding: 35px 20px;
     }
 
+    .main-container .hebergements .card-title {
+        font-size: 16px;
+    }
+
     /*activites*/
 
     .main-container .activites,
-    .main-container .activites .activites-cards,
-    .main-container .activites .activites-cards .card-links {
+    .main-container .activites .card-links {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -801,6 +838,13 @@ footer {
         width: 100%;
         margin: 0;
     }
+
+    .main-container .activites .activites-cards {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
 
     .main-container .activites-cards img {
         height: 141px;
