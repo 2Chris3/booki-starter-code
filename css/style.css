@@ -458,7 +458,6 @@ footer {
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
-
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 767.97px) and (max-width: 1024px) {
@@ -661,7 +660,7 @@ footer {
         right: 20px;
     }
 
-    .searchbar .searchbar-button-text {
+    .searchbar-button-text {
         display: none;
         margin: 0;
     }
@@ -676,13 +675,13 @@ footer {
         color: var(--main-bg-color);
     }
 
-    main .searchbar .fa-search {
+    .fa-search {
         border-radius: 15px;
     }
 
     /*Filtres*/
 
-    .main-container .filtres {
+    .filtres {
         padding: 20px;
         display: flex;
         justify-content: center;
@@ -692,11 +691,15 @@ footer {
         margin: 0;
     }
 
-    .main-container .filtres-content {
+    .filtres-content {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
+    }
+
+    .filtres-buttonsText {
+        font-size: small;
     }
 
     .filtres .filtres-buttons {
