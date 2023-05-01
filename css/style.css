@@ -470,11 +470,21 @@ footer {
 
     /* filtres */
 
-    .main-container .filtres {
+    .filtres {
         display: flex;
         flex-flow: column wrap;
         justify-content: start;
         align-items: start;
+    }
+
+    .filtres-content {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .filtres-buttonsText {
+        font-size: medium;
     }
 
 
