@@ -496,32 +496,10 @@ footer {
     /* populaires */
 
     .populaires {
-        margin-top: 50px;
-        display: flex;
-        flex-flow: column wrap;
-        width: 100%;
-
-    }
-
-    .populaires .populaires-cards {
         display: flex;
         flex-flow: row wrap;
         width: 100%;
-        gap: 20px;
     }
-
-    .populaires .card {
-        width: 100%;
-    }
-
-    .populaires .card-title {
-        font-size: 14px;
-    }
-
-    .populaires .card-subtitle {
-        font-size: 13px;
-    }
-
     /* activites */
 
     .activites .card img {
@@ -530,7 +508,7 @@ footer {
 
     .main-container .activites .card-title {
         font-size: 14px;
-        height:60px;
+        height: 60px;
     }
 
 
@@ -767,7 +745,7 @@ footer {
         flex-flow: column wrap;
         justify-content: space-between;
         gap: 15px;
-        
+
         margin: 0;
     }
 
