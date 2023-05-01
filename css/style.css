@@ -878,7 +878,7 @@ footer {
 
     .footer-containers {
         display: flex;
-        justify-content: column;
+        justify-content: start;
         padding: 30px;
     }
 
