@@ -315,8 +315,9 @@ i.fa-info {
     gap: 30px;
 }
 
-.hebergements a {
+.hebergements .card-links {
     width: 29%;
+    height: 220px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -330,7 +331,7 @@ i.fa-info {
 }
 
 .hebergements .card-title {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .hebergements-cards {
@@ -360,19 +361,13 @@ i.fa-info {
     flex-flow: column wrap;
     justify-content: space-between;
     margin: 0 10px;
+    height: 90px;
 }
 
-.card-text {
+.hebergements .card-text {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
-    gap: 8px;
-    margin-top: 4px;
-}
-
-.hebergements .card-content,
-.hebergements .card-text {
-    padding-bottom: 8px;
+    margin-top: 0;
 }
 
 
@@ -415,6 +410,7 @@ i.fa-info {
 .activites .card-title {
     padding: 20px;
     margin: 0;
+    height: 60px;
 }
 
 
@@ -684,17 +680,17 @@ footer {
     .filtres {
         padding: 20px;
         display: flex;
-        justify-content: center;
     }
 
     .main-container .filtres-title {
         margin: 0;
+        display: flex;
     }
 
     .filtres-content {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
         width: 100%;
     }
 
@@ -706,7 +702,7 @@ footer {
         display: flex;
         flex-flow: row wrap;
         font-size: 14px;
-        flex-basis: 45%;
+        flex-basis: 47%;
     }
 
     .filtres button:active {
@@ -796,7 +792,7 @@ footer {
 
     .main-container .populaires .card-txt {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         align-items: start;
         gap: 5px;
     }
@@ -813,7 +809,7 @@ footer {
     }
 
     .main-container .populaires .card-rating {
-        display: flex;
+        display: flex;Ex
         object-position: 50% bottom;
     }
 
@@ -907,5 +903,5 @@ footer {
 
 
 
-
+    
 }
