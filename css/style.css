@@ -900,8 +900,20 @@ footer {
 
 
 
-
-
-
-    
 }
+
+
+/* Proposition pour appareils en dessous de 351px 
+
+    /affichage large desktop/
+    @media (max-width: 350px) {
+
+        .filtres-buttonsText{
+            font-size: 12px;
+        }
+        
+
+
+    }
+
+    */
